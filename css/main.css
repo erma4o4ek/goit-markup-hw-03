@@ -6,17 +6,17 @@
 /*вторичный цвет фона #2F303A*/
 /*акцент  кнопка #2196F3*/
 
+/* Утилиты */
 
 /* Цвет фона fon*/
 .fon {
     background-color: var(--footer-main-color);
 }
 
+/*site header*/
 /*solution-section*/
 
 .solution-section {
-
-    margin-bottom: 94px;
     padding-top: 200px;
     padding-bottom: 200px;
 
@@ -29,36 +29,44 @@
     text-transform: uppercase;
 }
 
-.solutions-title {
-    margin-top: 0;
+.solution-container {
+    min-width: 696px;
+    height: auto;
+    margin:0 auto;
+    border: 1px solid var(--footer-main-color)
+}
+
+
+.solution-title {
+
+    margin: 0;
     margin-bottom: 30px;
     color: var(--text-color);
     text-transform: uppercase;
 }
 
+/*Особенности*/
 /*features-section*/
 
 .features-section {
-    padding: 0px;
-    margin-bottom: 94px;
     text-align: center;
 }
 
-.features {
-    display: flex;
+.features-list {
     flex-wrap: wrap;
+    margin-right: -30px;
 }
 
-.features-list-item {
+.features-item {
     width: calc((100% - 90px) / 4);
     margin-right: 30px;
 }
 
-.features-list-item:last-child {
+.features-item:last-child {
     margin-right: 0px;
 }
 
-.features .features-list-title {
+.features-title {
     margin-top: 0px;
     margin-bottom: 10px;
     color: var(--title-text-color);
@@ -70,8 +78,7 @@
     text-transform: uppercase;
 }
 
-.features .features-list-text {
-
+.features-text {
     margin-top: 0px;
     margin-bottom: 0px;
 
@@ -83,66 +90,57 @@
     line-height: 1.71;
 }
 
+/* Чем мы занимаемся */
 /*work-section*/
-.work-section {
 
-    padding: 0px;
-    margin-bottom: 94px;
+.work-section {
+    padding-top: 0;
 
     text-align: center;
 }
 
-.work {
-    display: flex;
+.work-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+
+
+
+    color: var(--title-text-color);
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+.work-list {
     flex-wrap: wrap;
 }
 
-.work-list-item {
+.work-item {
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
 }
 
-.work-list-item:nth-child(3n) {
+.work-item:nth-child(3n) {
     margin-right: 0px;
 }
 
-.work-title {
-
-    margin-top: 0px;
-    margin-bottom: 50px;
-
-    color: var(--title-text-color);
-
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
+.image {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
+/*Наша команда*/
 /* our-team-section */
+
 .our-team-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
     text-align: center;
-}
-
-.our-team {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.our-team-list-item {
-    width: calc(100% - 90px) / 4;
-    margin-right: 30px;
-}
-
-.our-team-list-item:nth-child(4n) {
-    margin-right: 0px;
 }
 
 .our-team-title {
-
     margin-top: 0px;
     margin-bottom: 50px;
 
@@ -152,12 +150,31 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
-    text-align: center
+    text-align: center;
 }
 
-.our-team .our-team-list-name {
+.our-team-list {
+    flex-wrap: wrap;
+}
 
+.our-team-item {
+    width: calc(100% - 90px) / 4;
+    margin-right: 30px;
+
+    background-color: var(--text-color);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.our-team-item:nth-child(4n) {
+    margin-right: 0px;
+}
+
+.our-team-name {
     margin-top: 30px;
+    margin-bottom: 0px;
 
     color: var(--title-text-color);
 
@@ -168,11 +185,9 @@
     text-align: center;
 }
 
-.our-team .our-team-list-profession {
-
+.our-team-profession {
     margin-top: 10px;
-    margin-bottom: 30px;
-
+    margin-bottom:30px;
     color: var(--primary-text-color);
 
     font-family: Roboto;
@@ -184,9 +199,11 @@
 
 /*button*/
 
+/*Эффективные решения для вашего бизнеса*/
 /*solution-section (button)*/
 
 .btn-primary {
+    display: inline-block;
     border-radius: 4px;
     padding: 10px 32px;
     width: 200px;

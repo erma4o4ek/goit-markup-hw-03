@@ -27,6 +27,7 @@
 }
 
 /* утилиты */
+
 .list {
     padding: 0;
     margin: 0;
@@ -34,11 +35,44 @@
 }
 
 .container {
-    width: 1200px;
+    width: 1230px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* main heading*/
+
+
+/*page-header*/
+
+.page-header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    background-color: var(--text-color);
+}
+
+/*page-nav*/
+
+.page-nav {
+    align-items: center;
+    justify-content: space-between;
 }
 
 /*logo*/
@@ -62,24 +96,10 @@
     color: var(--primary-bg-color);
 }
 
-/*page-header*/
+/*menu-nav*/
+/* site-navigation*/
 
-.page-header {
-    background-color: var(--text-color);
-}
-
-/*page-nav*/
-
-.page-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-/* site navigation*/
-
-.site-navigation {
-    display: flex;
+.site-navigation-list {
     margin-left: 93px;
 }
 
@@ -91,11 +111,11 @@
     margin-right: 0px; 
 */
 
-.site-navigation .item+.item {
+.site-navigation-item+.site-navigation-item {
     margin-left: 50px;
 }
 
-.site-navigation .link {
+.site-navigation-link {
     display: block;
     color: var(--title-text-color);
 
@@ -107,28 +127,26 @@
     text-decoration: none;
 }
 
-.site-navigation .link:hover,
-.site-navigation .link:focus {
+.site-navigation-link:hover,
+.site-navigation-link:focus {
     color: var(--accent-color);
 }
 
-.site-navigation .link.current {
+.site-navigation-link.current {
     color: var(--accent-color);
 }
 
-/* contact list */
+/*contact*/
 
-.contact {
-    display: flex;
+.contact-list {
     margin-left: auto;
 }
 
-.contact .info-item+.info-item {
+.contact-item+.contact-item {
     margin-left: 50px;
 }
 
-
-.contact .contact-connection {
+.contact-link {
     color: var(--primary-text-color);
 
     font-family: inherit;
@@ -139,8 +157,8 @@
     text-decoration: none;
 }
 
-.contact .contact-connection:hover,
-.contact .contact-connection:focus {
+.contact-link:hover,
+.contact-link:focus {
     color: var(--accent-color);
 }
 
@@ -151,7 +169,12 @@
     padding-bottom: 60px;
 }
 
-.contacts-list .contacts-link {
+.contact-us .logo {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.contacts-link {
     color: var(--footer-text-color);
 
     font-family: Roboto;
